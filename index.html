@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Jovian Drift SOS</title>
+</head>
+<body>
+    <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+<!--Phase 1: The Transmission Protocol (The Form)-->
+    <form method="post" action="#" >
+        <!--Phase 2: Pilot Credentials (Fieldset 1)-->
+        <fieldset>
+            <legend>
+                Pilot Credentials
+            </legend>
+            <label for="pilot-name">
+                Pilot Name:
+            </label>
+            <input 
+             type="text" 
+             id="for"
+             name="pilot_name" 
+             required="" 
+             placeholder="Enter name">
+            <label for="access-code">
+                Access Code:
+            </label >
+            <input 
+             type="password" 
+             id="access-code"
+             name="ccess_code" 
+             required="">
+            <label for="Command-email">
+                Command Email:
+            </label>
+            <input 
+             type="email"
+             id="Command-email"
+             name="email"
+             required="">
+        </fieldset>
+        <!--Phase 3: Vessel Diagnostics (Fieldset 2)-->
+        <fieldset>
+            <legend>
+                Vessel Diagnostics
+            </legend>
+
+            <label for="Hull-damage">
+                Hull Damage (%):
+            </label>
+            <input 
+            type="number" 
+            id="Hull-damage"
+            name="hull_damage"
+            required="">
+
+            <label for="Emergency-level:">
+                Emergency Level:
+            </label>
+            <select id="Emergency-level:" name="Emergency_level" required="">
+                <option value="low"> low</option>
+                <option value="medium"> medium </option>
+                <option value="high"> high </option>
+            </select>
+        </fieldset>
+        <!--Phase 4: Mission Log & Evidence (Fieldset 3)-->
+        <fieldset>
+            <legend>
+                Mission Log & Evidence
+            </legend>
+            <label for="sos-message" >
+                SOS Message:
+            </label>
+            <textarea id="sos-message" name="sos_message" required="" rows="3">
+            </textarea>
+            <div>
+                <input type="checkbox" id="quarantine" name="" required="">
+                <label for="" id="quarantine">I agree to quarantine protocols.</label>
+            </div>
+        </fieldset>
+
+        <!--Phase 5: The Control Panel (Buttons)-->
+        <button type="submit">INITIATE TRANSMISSION</button>
+        <button type="reset">RESET SYSTEM</button> 
+    </form>
+     <script src="./scripts/launch.js"></script>  
+</body>
+</html>
